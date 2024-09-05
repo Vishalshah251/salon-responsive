@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment-form</title>
+    <link rel="stylesheet" href="appointment-form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="form-header">Book an Appointment</h2>
+        <form id="appointment-form">
+            <div class="form-group">
+                <label for="name" class="form-label">Full Name:</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service" class="form-label">Choose a Service:</label>
+                <select id="service" name="service" class="form-select" required>
+                    <option value="">--Select Service--</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="time-slot" class="form-label">Select Time Slot:</label>
+                <select id="time-slot" name="time-slot" class="form-select" required>
+                    <option value="">--Select Time Slot--</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="preferred-time" class="form-label">Preferred Time:</label>
+                <input type="datetime-local" id="preferred-time" name="preferred-time" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="additional-info" class="form-label">Additional Information:</label>
+                <textarea id="additional-info" name="additional-info" rows="4" class="form-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="form-button">Book Appointment</button>
+        </form>
+    </div>
+</body>
+</html>

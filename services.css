@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #faf3f3; /* Light Beige */
+    color: #333;
+}
+
+.hero {
+    background-color: #f7cac9; /* Light Pink */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.services-section {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #d38b83; /* Soft Pink */
+}
+
+.service-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #f0e4e4; /* Light Beige */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card h3 {
+    color: #c94c4c; /* Dark Pink */
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #5d5b6a; /* Dark Gray */
+    margin-bottom: 15px;
+}
+
+.service-card button.book-now {
+    background-color: #d38b83; /* Soft Pink */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service-card button.book-now:hover {
+    background-color: #c94c4c; /* Dark Pink */
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #5d5b6a; /* Dark Gray */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .service-category {
+        justify-content: center;
+    }
+    
+    .service-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .service-category {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    
+    .hero p {
+        font-size: 1em;
+    }
+
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-card h3 {
+        font-size: 1.5em;
+    }
+    
+    .service-card p {
+        font-size: 0.9em;
+    }
+
+    .service-card button.book-now {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
